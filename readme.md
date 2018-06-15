@@ -1,5 +1,5 @@
-﻿
-	##Parametros
+
+	#Parametros
 		**BASEADDR**:	Dirección de la interfaz axiLite. No se como automatizar la elección de esta dirección.
 		**NPIXELS**:	Numero de pixeles en la imagen a procesar.	 
 		**BITS**:	Numero de bits por canal de color.
