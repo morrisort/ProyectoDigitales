@@ -1,10 +1,15 @@
 ##Parametros
 
 **BASEADDR**:	Dirección de la interfaz axiLite. No se como automatizar la elección de esta dirección.
-**NPIXELS**:	Numero de pixeles en la imagen a procesar.	 
+
+**NPIXELS**:	Numero de pixeles en la imagen a procesar.
+
 **BITS**:	Numero de bits por canal de color.
-**STEPS**:	Numero de pasos en los que se va a multiplicar. La siguiente relacion se tiene que conservar STEPS*LVECTOR = 1024
-**LVECTOR**:	Largo del vector que se multiplica en cada paso. La siguiente relacion se tiene que  conservar STEPS*LVECTOR = 1024
+
+**STEPS**:	Numero de pasos en los que se va a multiplicar. La siguiente relacion se tiene que conservar STEPS*LVECTOR = 1024.
++
+**LVECTOR**:	Largo del vector que se multiplica en cada paso. La siguiente relacion se tiene que  conservar STEPS*LVECTOR = 1024.
+
 **QWIDTH**:	Ancho en bits de cada elemento de las matrices Q1 y Q2.
 
 ##Uso del ip
