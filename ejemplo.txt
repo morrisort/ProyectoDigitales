@@ -1,0 +1,36 @@
+ void setQ (int baseAddress, int offset, int* vector, int lowerIndex, int upperIndex){
+	for (int i = lowerIndex; i <= upperIndex; i++){
+		{
+		Xil_Out32(baseAddress + offset, vector[i]);
+		}
+	}
+}
+
+
+#include "QandConst.h"
+#include "pixelRadiationRegistersQ_regs.h" // contiene informacion de los registros
+
+#define START_LOADING 1;
+#define LOAD_BUFFERS 9;
+#define FINISH_LOADING 15;
+#define STEPS 16;
+#define LVECTOR 64;
+
+Xil_Out32(PIXELRADIATION_BASEADDR + COMMAND_OFFSET, START_LOADING); // Start loading command
+int lowerIndex;
+int upperIndex;
+for (int i = 0; i < STEPS; i++){
+	lowerIndex = i * LVECTOR;
+	upperIndex = lowerIndex + LVECTOR - 1;
+	setQ (PIXELRADIATION_BASEADDR, DATAQRED1_OFFSET, QRed1, lowerIndex, upperIndex); //RedQ1
+	setQ (PIXELRADIATION_BASEADDR, DATAQRED2_OFFSET, QRed2, lowerIndex, upperIndex); //RedQ2
+	setQ (PIXELRADIATION_BASEADDR, DATAQGREEN1_OFFSET, QGreen1, lowerIndex, upperIndex); //GreenQ1
+	setQ (PIXELRADIATION_BASEADDR, DATAQGREEN2_OFFSET, QGreen2, lowerIndex, upperIndex); //GreenQ2
+	setQ (PIXELRADIATION_BASEADDR, DATAQBLUE1_OFFSET, QBlue1, lowerIndex, upperIndex); //BlueQ1
+	setQ (PIXELRADIATION_BASEADDR, DATAQBLUE2_OFFSET, QBlue2, lowerIndex, upperIndex); //BlueQ2
+	Xil_Out32(PIXELRADIATION_BASEADDR + COMMAND_OFFSET, LOAD_BUFFERS); // Load circular buffer command
+}
+Xil_Out32(PIXELRADIATION_BASEADDR + UPPERCONSTANT_OFFSET, upperConstant);
+Xil_Out32(PIXELRADIATION_BASEADDR + LOWERCONSTANT_OFFSET, lowerConstant);
+Xil_Out32(PIXELRADIATION_BASEADDR + COMMAND_OFFSET, FINISH_LOADING); // Finish loading command
+

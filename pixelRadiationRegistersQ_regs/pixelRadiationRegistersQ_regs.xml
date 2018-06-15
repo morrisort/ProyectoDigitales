@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated on 2018-04-27 at 19:11 (UTC) by airhdl version 2018.03.2 -->
+<spirit:component
+    xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    
+    <spirit:vendor>airhdl.com</spirit:vendor>
+    <spirit:library>user</spirit:library>
+    <spirit:name>pixelRadiationRegistersQ</spirit:name>
+    <spirit:version>1.0</spirit:version>
+
+    <spirit:memoryMaps>
+        <spirit:memoryMap>
+            <spirit:name>S_AXI</spirit:name>
+                <spirit:addressBlock>
+                    <spirit:name>S_AXI_reg</spirit:name>
+                    <spirit:baseAddress>0x0</spirit:baseAddress>
+                    <spirit:range spirit:format="long">44</spirit:range>
+                    <spirit:width>32</spirit:width>
+                    <spirit:usage>register</spirit:usage> 
+
+                    <spirit:register>
+                        <spirit:name>upperResult</spirit:name>
+                        <spirit:description>Upper bits of the final calibrated result</spirit:description>
+                        <spirit:addressOffset>0x0</spirit:addressOffset>
+                        <spirit:size>32</spirit:size>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:field>
+                            <spirit:name>value</spirit:name>
+                            <spirit:description></spirit:description>
+                            <spirit:bitOffset>0</spirit:bitOffset>
+                            <spirit:bitWidth>32</spirit:bitWidth>
+                            <spirit:volatile>true</spirit:volatile>
+                        </spirit:field>
+                    </spirit:register>
+
+                    <spirit:register>
+                        <spirit:name>lowerResult</spirit:name>
+                        <spirit:description>Lower bits of the final calibrated result</spirit:description>
+                        <spirit:addressOffset>0x4</spirit:addressOffset>
+                        <spirit:size>32</spirit:size>
+                        <spirit:access>read-only</spirit:access>
+                        <spirit:field>
+                            <spirit:name>value</spirit:name>
+                            <spirit:description></spirit:description>
+                            <spirit:bitOffset>0</spirit:bitOffset>
+                            <spirit:bitWidth>32</spirit:bitWidth>
+                            <spirit:volatile>true</spirit:volatile>
+                        </spirit:field>
+                    </spirit:register>
+
+                    <spirit:register>
+                        <spirit:name>dataQBlue1</spirit:name>
+                        <spirit:description>blue component of the Q1 matrix</spirit:description>
+                        <spirit:addressOffset>0x8</spirit:addressOffset>
+                        <spirit:size>32</spirit:size>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:field>
+                            <spirit:name>value</spirit:name>
+                            <spirit:description>red component of the Q matrix</spirit:description>
+                            <spirit:bitOffset>0</spirit:bitOffset>
+                            <spirit:bitWidth>32</spirit:bitWidth>
+                        </spirit:field>
+                    </spirit:register>
+
+                    <spirit:register>
+                        <spirit:name>dataQBlue2</spirit:name>
+                        <spirit:description>blue component of the Q2 matrix</spirit:description>
+                        <spirit:addressOffset>0xC</spirit:addressOffset>
+                        <spirit:size>32</spirit:size>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:field>
+                            <spirit:name>value</spirit:name>
+                            <spirit:description>red component of the Q matrix</spirit:description>
+                            <spirit:bitOffset>0</spirit:bitOffset>
+                            <spirit:bitWidth>32</spirit:bitWidth>
+                        </spirit:field>
+                    </spirit:register>
+
+                    <spirit:register>
+                        <spirit:name>dataQGreen1</spirit:name>
+                        <spirit:description>green component of the Q1 matrix</spirit:description>
+                        <spirit:addressOffset>0x10</spirit:addressOffset>
+                        <spirit:size>32</spirit:size>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:field>
+                            <spirit:name>value</spirit:name>
+                            <spirit:description>red component of the Q matrix</spirit:description>
+                            <spirit:bitOffset>0</spirit:bitOffset>
+                            <spirit:bitWidth>32</spirit:bitWidth>
+                        </spirit:field>
+                    </spirit:register>
+
+                    <spirit:register>
+                        <spirit:name>dataQGreen2</spirit:name>
+                        <spirit:description>green component of the Q2 matix</spirit:description>
+                        <spirit:addressOffset>0x14</spirit:addressOffset>
+                        <spirit:size>32</spirit:size>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:field>
+                            <spirit:name>value</spirit:name>
+                            <spirit:description></spirit:description>
+                            <spirit:bitOffset>0</spirit:bitOffset>
+                            <spirit:bitWidth>32</spirit:bitWidth>
+                        </spirit:field>
+                    </spirit:register>
+
+                    <spirit:register>
+                        <spirit:name>dataQRed1</spirit:name>
+                        <spirit:description>red component of the Q1 matrix</spirit:description>
+                        <spirit:addressOffset>0x18</spirit:addressOffset>
+                        <spirit:size>32</spirit:size>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:field>
+                            <spirit:name>value</spirit:name>
+                            <spirit:description>red component of the Q1 matrix</spirit:description>
+                            <spirit:bitOffset>0</spirit:bitOffset>
+                            <spirit:bitWidth>32</spirit:bitWidth>
+                        </spirit:field>
+                    </spirit:register>
+
+                    <spirit:register>
+                        <spirit:name>dataQRed2</spirit:name>
+                        <spirit:description>red component of the Q2 matrix</spirit:description>
+                        <spirit:addressOffset>0x1C</spirit:addressOffset>
+                        <spirit:size>32</spirit:size>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:field>
+                            <spirit:name>value</spirit:name>
+                            <spirit:description>red component of the Q2 matrix</spirit:description>
+                            <spirit:bitOffset>0</spirit:bitOffset>
+                            <spirit:bitWidth>32</spirit:bitWidth>
+                        </spirit:field>
+                    </spirit:register>
+
+                    <spirit:register>
+                        <spirit:name>command</spirit:name>
+                        <spirit:description>command register</spirit:description>
+                        <spirit:addressOffset>0x20</spirit:addressOffset>
+                        <spirit:size>32</spirit:size>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:field>
+                            <spirit:name>value</spirit:name>
+                            <spirit:description>command register</spirit:description>
+                            <spirit:bitOffset>0</spirit:bitOffset>
+                            <spirit:bitWidth>32</spirit:bitWidth>
+                        </spirit:field>
+                    </spirit:register>
+
+                    <spirit:register>
+                        <spirit:name>upperConstant</spirit:name>
+                        <spirit:description>Upper bits of the calibrating constant</spirit:description>
+                        <spirit:addressOffset>0x24</spirit:addressOffset>
+                        <spirit:size>32</spirit:size>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:field>
+                            <spirit:name>value</spirit:name>
+                            <spirit:description>Upper bits of the calibration constant</spirit:description>
+                            <spirit:bitOffset>0</spirit:bitOffset>
+                            <spirit:bitWidth>32</spirit:bitWidth>
+                        </spirit:field>
+                    </spirit:register>
+
+                    <spirit:register>
+                        <spirit:name>lowerConstant</spirit:name>
+                        <spirit:description>Lower bits of the calibration constant</spirit:description>
+                        <spirit:addressOffset>0x28</spirit:addressOffset>
+                        <spirit:size>32</spirit:size>
+                        <spirit:access>read-write</spirit:access>
+                        <spirit:field>
+                            <spirit:name>value</spirit:name>
+                            <spirit:description>Lower bits of the calibrating constant</spirit:description>
+                            <spirit:bitOffset>0</spirit:bitOffset>
+                            <spirit:bitWidth>32</spirit:bitWidth>
+                        </spirit:field>
+                    </spirit:register>
+
+                </spirit:addressBlock>
+
+        </spirit:memoryMap>
+    </spirit:memoryMaps>
+
+</spirit:component>

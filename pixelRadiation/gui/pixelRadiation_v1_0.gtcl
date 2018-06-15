@@ -1,0 +1,4 @@
+# This file is automatically written.  Do not modify.
+proc gen_USERPARAMETER_ADDMULTIPLYWIDTH_VALUE {QWIDTH BITS } {expr $QWIDTH + $BITS + 1 + floor(log(3)/log(2)) + 1}
+proc gen_USERPARAMETER_ADDERTREEWIDTH_VALUE {ADDMULTIPLYWIDTH LVECTOR } {expr $ADDMULTIPLYWIDTH + floor(log($LVECTOR)/log(2)) + 1}
+proc gen_USERPARAMETER_ACCUMULATORWIDTH_VALUE {ADDERTREEWIDTH STEPS NPIXELS } {expr $ADDERTREEWIDTH + floor(log($STEPS)/log(2)) + floor(log($NPIXELS)/log(2))+ 1}

@@ -1,0 +1,219 @@
+{
+  "name": "pixelRadiationRegistersQ",
+  "description": "",
+  "width": 32,
+  "baseAddress": 0,
+  "registers": [
+    {
+      "name": "upperResult",
+      "description": "Upper bits of the final calibrated result",
+      "access": "READ_ONLY",
+      "addressOffset": 0,
+      "size": 32,
+      "fields": [
+        {
+          "name": "value",
+          "description": "",
+          "bitWidth": 32,
+          "bitOffset": 0,
+          "reset": 0,
+          "selfClear": false
+        }
+      ],
+      "isArray": false,
+      "arrayLength": 0
+    },
+    {
+      "name": "lowerResult",
+      "description": "Lower bits of the final calibrated result",
+      "access": "READ_ONLY",
+      "addressOffset": 4,
+      "size": 32,
+      "fields": [
+        {
+          "name": "value",
+          "description": "",
+          "bitWidth": 32,
+          "bitOffset": 0,
+          "reset": 0,
+          "selfClear": false
+        }
+      ],
+      "isArray": false,
+      "arrayLength": 0
+    },
+    {
+      "name": "dataQBlue1",
+      "description": "blue component of the Q1 matrix",
+      "access": "READ_WRITE",
+      "addressOffset": 8,
+      "size": 32,
+      "fields": [
+        {
+          "name": "value",
+          "description": "red component of the Q matrix",
+          "bitWidth": 32,
+          "bitOffset": 0,
+          "reset": 0,
+          "selfClear": false
+        }
+      ],
+      "isArray": false,
+      "arrayLength": 0
+    },
+    {
+      "name": "dataQBlue2",
+      "description": "blue component of the Q2 matrix",
+      "access": "READ_WRITE",
+      "addressOffset": 12,
+      "size": 32,
+      "fields": [
+        {
+          "name": "value",
+          "description": "red component of the Q matrix",
+          "bitWidth": 32,
+          "bitOffset": 0,
+          "reset": 0,
+          "selfClear": false
+        }
+      ],
+      "isArray": false,
+      "arrayLength": 0
+    },
+    {
+      "name": "dataQGreen1",
+      "description": "green component of the Q1 matrix",
+      "access": "READ_WRITE",
+      "addressOffset": 16,
+      "size": 32,
+      "fields": [
+        {
+          "name": "value",
+          "description": "red component of the Q matrix",
+          "bitWidth": 32,
+          "bitOffset": 0,
+          "reset": 0,
+          "selfClear": false
+        }
+      ],
+      "isArray": false,
+      "arrayLength": 0
+    },
+    {
+      "name": "dataQGreen2",
+      "description": "green component of the Q2 matix",
+      "access": "READ_WRITE",
+      "addressOffset": 20,
+      "size": 32,
+      "fields": [
+        {
+          "name": "value",
+          "description": "",
+          "bitWidth": 32,
+          "bitOffset": 0,
+          "reset": 0,
+          "selfClear": false
+        }
+      ],
+      "isArray": false,
+      "arrayLength": 0
+    },
+    {
+      "name": "dataQRed1",
+      "description": "red component of the Q1 matrix",
+      "access": "READ_WRITE",
+      "addressOffset": 24,
+      "size": 32,
+      "fields": [
+        {
+          "name": "value",
+          "description": "red component of the Q1 matrix",
+          "bitWidth": 32,
+          "bitOffset": 0,
+          "reset": 0,
+          "selfClear": false
+        }
+      ],
+      "isArray": false,
+      "arrayLength": 0
+    },
+    {
+      "name": "dataQRed2",
+      "description": "red component of the Q2 matrix",
+      "access": "READ_WRITE",
+      "addressOffset": 28,
+      "size": 32,
+      "fields": [
+        {
+          "name": "value",
+          "description": "red component of the Q2 matrix",
+          "bitWidth": 32,
+          "bitOffset": 0,
+          "reset": 0,
+          "selfClear": false
+        }
+      ],
+      "isArray": false,
+      "arrayLength": 0
+    },
+    {
+      "name": "command",
+      "description": "command register",
+      "access": "READ_WRITE",
+      "addressOffset": 32,
+      "size": 32,
+      "fields": [
+        {
+          "name": "value",
+          "description": "command register",
+          "bitWidth": 32,
+          "bitOffset": 0,
+          "reset": 0,
+          "selfClear": false
+        }
+      ],
+      "isArray": false,
+      "arrayLength": 0
+    },
+    {
+      "name": "upperConstant",
+      "description": "Upper bits of the calibrating constant",
+      "access": "READ_WRITE",
+      "addressOffset": 36,
+      "size": 32,
+      "fields": [
+        {
+          "name": "value",
+          "description": "Upper bits of the calibration constant",
+          "bitWidth": 32,
+          "bitOffset": 0,
+          "reset": 0,
+          "selfClear": false
+        }
+      ],
+      "isArray": false,
+      "arrayLength": 0
+    },
+    {
+      "name": "lowerConstant",
+      "description": "Lower bits of the calibration constant",
+      "access": "READ_WRITE",
+      "addressOffset": 40,
+      "size": 32,
+      "fields": [
+        {
+          "name": "value",
+          "description": "Lower bits of the calibrating constant",
+          "bitWidth": 32,
+          "bitOffset": 0,
+          "reset": 0,
+          "selfClear": false
+        }
+      ],
+      "isArray": false,
+      "arrayLength": 0
+    }
+  ],
+  "revision": 17,
+  "generateRecordPorts": false
+}

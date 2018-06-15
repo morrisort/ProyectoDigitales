@@ -1,0 +1,20 @@
+
+*** Running vivado
+    with args -log pixelRadiation.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source pixelRadiation.tcl -notrace
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source pixelRadiation.tcl -notrace
+
+*** Halting run - EA reset detected ***
+
+
+
+    while executing
+"start_step init_design"
+    (file "pixelRadiation.tcl" line 48)
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  9 15:13:40 2018...

@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_pixelRadiation_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_2 " />
+            <top_module name="\$unit_5 " />
+            <top_module name="glbl" />
+            <top_module name="pixelRadiationRegistersQ_regs_pkg" />
+            <top_module name="tb_pixelRadiation" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="189247166666fs"></ZoomStartTime>
+      <ZoomEndTime time="189467766667fs"></ZoomEndTime>
+      <Cursor1Time time="189431000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="234"></NameColumnWidth>
+      <ValueColumnWidth column_width="288"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject type="logic" fp_name="/tb_pixelRadiation/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pixelRadiation/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pixelRadiation/RGB">
+      <obj_property name="ElementShortName">RGB[23:0]</obj_property>
+      <obj_property name="ObjectShortName">RGB[23:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pixelRadiation/valid">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pixelRadiation/SOF">
+      <obj_property name="ElementShortName">SOF</obj_property>
+      <obj_property name="ObjectShortName">SOF</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pixelRadiation/EOL">
+      <obj_property name="ElementShortName">EOL</obj_property>
+      <obj_property name="ObjectShortName">EOL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pixelRadiation/ready">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pixelRadiation/validOut">
+      <obj_property name="ElementShortName">validOut</obj_property>
+      <obj_property name="ObjectShortName">validOut</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group91">
+      <obj_property name="label">PixelRadiationBrain</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/pixelRadiationBrain/state">
+         <obj_property name="ElementShortName">state[31:0]</obj_property>
+         <obj_property name="ObjectShortName">state[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/pixelRadiationBrain/counter">
+         <obj_property name="ElementShortName">counter[31:0]</obj_property>
+         <obj_property name="ObjectShortName">counter[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/pixelRadiationBrain/startLoading">
+         <obj_property name="ElementShortName">startLoading</obj_property>
+         <obj_property name="ObjectShortName">startLoading</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/pixelRadiationBrain/finishLoading">
+         <obj_property name="ElementShortName">finishLoading</obj_property>
+         <obj_property name="ObjectShortName">finishLoading</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/pixelRadiationBrain/loadBuffers">
+         <obj_property name="ElementShortName">loadBuffers</obj_property>
+         <obj_property name="ObjectShortName">loadBuffers</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/pixelRadiationBrain/go">
+         <obj_property name="ElementShortName">go</obj_property>
+         <obj_property name="ObjectShortName">go</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/pixelRadiationBrain/red">
+         <obj_property name="ElementShortName">red[8:0]</obj_property>
+         <obj_property name="ObjectShortName">red[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/pixelRadiationBrain/green">
+         <obj_property name="ElementShortName">green[8:0]</obj_property>
+         <obj_property name="ObjectShortName">green[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/pixelRadiationBrain/blue">
+         <obj_property name="ElementShortName">blue[8:0]</obj_property>
+         <obj_property name="ObjectShortName">blue[8:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/pixelRadiationBrain/RGB">
+         <obj_property name="ElementShortName">RGB[23:0]</obj_property>
+         <obj_property name="ObjectShortName">RGB[23:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group1280">
+      <obj_property name="label">Multiplicador1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/multiplicator1/validIn">
+         <obj_property name="ElementShortName">validIn</obj_property>
+         <obj_property name="ObjectShortName">validIn</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/multiplicator1/num1">
+         <obj_property name="ElementShortName">num1[8:0]</obj_property>
+         <obj_property name="ObjectShortName">num1[8:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/multiplicator1/num2">
+         <obj_property name="ElementShortName">num2[0:63][15:0]</obj_property>
+         <obj_property name="ObjectShortName">num2[0:63][15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/multiplicator1/num3">
+         <obj_property name="ElementShortName">num3[8:0]</obj_property>
+         <obj_property name="ObjectShortName">num3[8:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/multiplicator1/num4">
+         <obj_property name="ElementShortName">num4[0:63][15:0]</obj_property>
+         <obj_property name="ObjectShortName">num4[0:63][15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/multiplicator1/num5">
+         <obj_property name="ElementShortName">num5[8:0]</obj_property>
+         <obj_property name="ObjectShortName">num5[8:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/multiplicator1/num6">
+         <obj_property name="ElementShortName">num6[0:63][15:0]</obj_property>
+         <obj_property name="ObjectShortName">num6[0:63][15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/multiplicator1/validOut">
+         <obj_property name="ElementShortName">validOut</obj_property>
+         <obj_property name="ObjectShortName">validOut</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/multiplicator1/result">
+         <obj_property name="ElementShortName">result[0:63][26:0]</obj_property>
+         <obj_property name="ObjectShortName">result[0:63][26:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group89">
+      <obj_property name="label">adderTree1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group403">
+         <obj_property name="label">interruptSource</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/calibratedInterrupt/validData">
+            <obj_property name="ElementShortName">validData</obj_property>
+            <obj_property name="ObjectShortName">validData</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/calibratedInterrupt/readA">
+            <obj_property name="ElementShortName">readA</obj_property>
+            <obj_property name="ObjectShortName">readA</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_pixelRadiation/uut/calibratedInterrupt/dataA">
+            <obj_property name="ElementShortName">dataA[31:0]</obj_property>
+            <obj_property name="ObjectShortName">dataA[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/calibratedInterrupt/readB">
+            <obj_property name="ElementShortName">readB</obj_property>
+            <obj_property name="ObjectShortName">readB</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_pixelRadiation/uut/calibratedInterrupt/dataB">
+            <obj_property name="ElementShortName">dataB[31:0]</obj_property>
+            <obj_property name="ObjectShortName">dataB[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/calibratedInterrupt/interrupt">
+            <obj_property name="ElementShortName">interrupt</obj_property>
+            <obj_property name="ObjectShortName">interrupt</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_pixelRadiation/uut/calibratedInterrupt/dataAOut">
+            <obj_property name="ElementShortName">dataAOut[31:0]</obj_property>
+            <obj_property name="ObjectShortName">dataAOut[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_pixelRadiation/uut/calibratedInterrupt/dataBOut">
+            <obj_property name="ElementShortName">dataBOut[31:0]</obj_property>
+            <obj_property name="ObjectShortName">dataBOut[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_pixelRadiation/uut/calibratedInterrupt/state">
+            <obj_property name="ElementShortName">state[31:0]</obj_property>
+            <obj_property name="ObjectShortName">state[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_pixelRadiation/uut/calibratedInterrupt/stateNext">
+            <obj_property name="ElementShortName">stateNext[31:0]</obj_property>
+            <obj_property name="ObjectShortName">stateNext[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/calibratedInterrupt/interrupHandled">
+            <obj_property name="ElementShortName">interrupHandled</obj_property>
+            <obj_property name="ObjectShortName">interrupHandled</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/calibratedInterrupt/readAreg">
+            <obj_property name="ElementShortName">readAreg</obj_property>
+            <obj_property name="ObjectShortName">readAreg</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/calibratedInterrupt/readBreg">
+            <obj_property name="ElementShortName">readBreg</obj_property>
+            <obj_property name="ObjectShortName">readBreg</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/addertree1/outReady">
+         <obj_property name="ElementShortName">outReady</obj_property>
+         <obj_property name="ObjectShortName">outReady</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/addertree1/result">
+         <obj_property name="ElementShortName">result[32:0]</obj_property>
+         <obj_property name="ObjectShortName">result[32:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group1141">
+      <obj_property name="label">accumulator</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/accumulator/validIn">
+         <obj_property name="ElementShortName">validIn</obj_property>
+         <obj_property name="ObjectShortName">validIn</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/accumulator/inputNumber">
+         <obj_property name="ElementShortName">inputNumber[32:0]</obj_property>
+         <obj_property name="ObjectShortName">inputNumber[32:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/accumulator/accumulated">
+         <obj_property name="ElementShortName">accumulated[42:0]</obj_property>
+         <obj_property name="ObjectShortName">accumulated[42:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/accumulator/validOut">
+         <obj_property name="ElementShortName">validOut</obj_property>
+         <obj_property name="ObjectShortName">validOut</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/accumulator/outputNumber">
+         <obj_property name="ElementShortName">outputNumber[42:0]</obj_property>
+         <obj_property name="ObjectShortName">outputNumber[42:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/accumulator/counter">
+         <obj_property name="ElementShortName">counter[31:0]</obj_property>
+         <obj_property name="ObjectShortName">counter[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/accumulator/LIMIT">
+         <obj_property name="ElementShortName">LIMIT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LIMIT[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group97">
+      <obj_property name="label">simulation variables</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/QRed1">
+         <obj_property name="ElementShortName">QRed1[0:1023][15:0]</obj_property>
+         <obj_property name="ObjectShortName">QRed1[0:1023][15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/QRed2">
+         <obj_property name="ElementShortName">QRed2[0:1023][15:0]</obj_property>
+         <obj_property name="ObjectShortName">QRed2[0:1023][15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/QGreen1">
+         <obj_property name="ElementShortName">QGreen1[0:1023][15:0]</obj_property>
+         <obj_property name="ObjectShortName">QGreen1[0:1023][15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/QGreen2">
+         <obj_property name="ElementShortName">QGreen2[0:1023][15:0]</obj_property>
+         <obj_property name="ObjectShortName">QGreen2[0:1023][15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/QBlue1">
+         <obj_property name="ElementShortName">QBlue1[0:1023][15:0]</obj_property>
+         <obj_property name="ObjectShortName">QBlue1[0:1023][15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/QBlue2">
+         <obj_property name="ElementShortName">QBlue2[0:1023][15:0]</obj_property>
+         <obj_property name="ObjectShortName">QBlue2[0:1023][15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/expectedValueMATLAB">
+         <obj_property name="ElementShortName">expectedValueMATLAB[63:0]</obj_property>
+         <obj_property name="ObjectShortName">expectedValueMATLAB[63:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">53</obj_property>
+         <obj_property name="radix_otherWidth">11</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/expectedValueMATLAB">
+         <obj_property name="ElementShortName">expectedValueMATLAB[63:0]</obj_property>
+         <obj_property name="ObjectShortName">expectedValueMATLAB[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/red">
+         <obj_property name="ElementShortName">red[7:0]</obj_property>
+         <obj_property name="ObjectShortName">red[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/green">
+         <obj_property name="ElementShortName">green[7:0]</obj_property>
+         <obj_property name="ObjectShortName">green[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/blue">
+         <obj_property name="ElementShortName">blue[7:0]</obj_property>
+         <obj_property name="ObjectShortName">blue[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/BITS">
+         <obj_property name="ElementShortName">BITS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BITS[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/STEPS">
+         <obj_property name="ElementShortName">STEPS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">STEPS[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/NPIXELS">
+         <obj_property name="ElementShortName">NPIXELS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">NPIXELS[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/LVECTOR">
+         <obj_property name="ElementShortName">LVECTOR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LVECTOR[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/ADDMULTIPLYWIDTH">
+         <obj_property name="ElementShortName">ADDMULTIPLYWIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADDMULTIPLYWIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/ADDERTREEWIDTH">
+         <obj_property name="ElementShortName">ADDERTREEWIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADDERTREEWIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/ACCUMULATORWIDTH">
+         <obj_property name="ElementShortName">ACCUMULATORWIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ACCUMULATORWIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/NTESTS">
+         <obj_property name="ElementShortName">NTESTS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">NTESTS[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group1166">
+      <obj_property name="label">fix2float</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/fix2floatAcumulator/s_axis_a_tvalid">
+         <obj_property name="ElementShortName">s_axis_a_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_a_tvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/fix2floatAcumulator/s_axis_a_tready">
+         <obj_property name="ElementShortName">s_axis_a_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_a_tready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/fix2floatAcumulator/s_axis_a_tdata">
+         <obj_property name="ElementShortName">s_axis_a_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_a_tdata[63:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">53</obj_property>
+         <obj_property name="radix_otherWidth">11</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/fix2floatAcumulator/m_axis_result_tvalid">
+         <obj_property name="ElementShortName">m_axis_result_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_result_tvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/fix2floatAcumulator/m_axis_result_tready">
+         <obj_property name="ElementShortName">m_axis_result_tready</obj_property>
+         <obj_property name="ObjectShortName">m_axis_result_tready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/fix2floatAcumulator/m_axis_result_tdata">
+         <obj_property name="ElementShortName">m_axis_result_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_result_tdata[63:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">53</obj_property>
+         <obj_property name="radix_otherWidth">11</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group1173">
+      <obj_property name="label">nonZeroAcumulator</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/nonZeroPixelCounter/validNonZero">
+         <obj_property name="ElementShortName">validNonZero</obj_property>
+         <obj_property name="ObjectShortName">validNonZero</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/nonZeroPixelCounter/nonZeroCount">
+         <obj_property name="ElementShortName">nonZeroCount[63:0]</obj_property>
+         <obj_property name="ObjectShortName">nonZeroCount[63:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">53</obj_property>
+         <obj_property name="radix_otherWidth">11</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group1188">
+      <obj_property name="label">calibrator</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/calibrator/s_axis_a_tvalid">
+         <obj_property name="ElementShortName">s_axis_a_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_a_tvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/calibrator/s_axis_a_tready">
+         <obj_property name="ElementShortName">s_axis_a_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_a_tready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/calibrator/s_axis_a_tdata">
+         <obj_property name="ElementShortName">s_axis_a_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_a_tdata[63:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">53</obj_property>
+         <obj_property name="radix_otherWidth">11</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/calibrator/s_axis_b_tvalid">
+         <obj_property name="ElementShortName">s_axis_b_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_b_tvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/calibrator/s_axis_b_tready">
+         <obj_property name="ElementShortName">s_axis_b_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_b_tready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/calibrator/s_axis_b_tdata">
+         <obj_property name="ElementShortName">s_axis_b_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_b_tdata[63:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">53</obj_property>
+         <obj_property name="radix_otherWidth">11</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/calibrator/m_axis_result_tvalid">
+         <obj_property name="ElementShortName">m_axis_result_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_result_tvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/calibrator/m_axis_result_tready">
+         <obj_property name="ElementShortName">m_axis_result_tready</obj_property>
+         <obj_property name="ObjectShortName">m_axis_result_tready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/calibrator/m_axis_result_tdata">
+         <obj_property name="ElementShortName">m_axis_result_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_result_tdata[63:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">53</obj_property>
+         <obj_property name="radix_otherWidth">11</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group1198">
+      <obj_property name="label">preCalibrator</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/preCalibrator/s_axis_a_tvalid">
+         <obj_property name="ElementShortName">s_axis_a_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_a_tvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/preCalibrator/s_axis_a_tready">
+         <obj_property name="ElementShortName">s_axis_a_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_a_tready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/preCalibrator/s_axis_a_tdata">
+         <obj_property name="ElementShortName">s_axis_a_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_a_tdata[63:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">53</obj_property>
+         <obj_property name="radix_otherWidth">11</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/preCalibrator/s_axis_b_tvalid">
+         <obj_property name="ElementShortName">s_axis_b_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_b_tvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/preCalibrator/s_axis_b_tready">
+         <obj_property name="ElementShortName">s_axis_b_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_b_tready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/preCalibrator/s_axis_b_tdata">
+         <obj_property name="ElementShortName">s_axis_b_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_b_tdata[63:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">53</obj_property>
+         <obj_property name="radix_otherWidth">11</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/preCalibrator/m_axis_result_tvalid">
+         <obj_property name="ElementShortName">m_axis_result_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_result_tvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/preCalibrator/m_axis_result_tready">
+         <obj_property name="ElementShortName">m_axis_result_tready</obj_property>
+         <obj_property name="ObjectShortName">m_axis_result_tready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/preCalibrator/m_axis_result_tdata">
+         <obj_property name="ElementShortName">m_axis_result_tdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_result_tdata[63:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">53</obj_property>
+         <obj_property name="radix_otherWidth">11</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group92">
+      <obj_property name="label">adderTree2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/tb_pixelRadiation/uut/addertree2/outReady">
+         <obj_property name="ElementShortName">outReady</obj_property>
+         <obj_property name="ObjectShortName">outReady</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_pixelRadiation/uut/addertree2/result">
+         <obj_property name="ElementShortName">result[32:0]</obj_property>
+         <obj_property name="ObjectShortName">result[32:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

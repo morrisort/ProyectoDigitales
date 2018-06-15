@@ -1,0 +1,267 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto e8702303d22d465db3e367021ada9c08 --debug typical --relax --mt 8 -L xbip_utils_v3_0_7 -L axi_utils_v2_0_3 -L xbip_pipe_v3_0_3 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_3 -L xbip_dsp48_multadd_v3_0_3 -L xbip_bram18k_v3_0_3 -L mult_gen_v12_0_12 -L floating_point_v7_1_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_pixelRadiation_behav xil_defaultlib.tb_pixelRadiation xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index -63 into inputNum is out of bounds [/home/andrew/Documents/ProyectoFinalAndrewMorrison/pixelRadiation/pixelRadiation.srcs/sources_1/imports/hdl/addertree_sec.sv:56]
+WARNING: [VRFC 10-1783] select index 127 into tree is out of bounds [/home/andrew/Documents/ProyectoFinalAndrewMorrison/pixelRadiation/pixelRadiation.srcs/sources_1/imports/hdl/addertree_sec.sv:54]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/andrew/Documents/ProyectoFinalAndrewMorrison/pixelRadiation/pixelRadiation.srcs/sources_1/imports/pixelRadiationRegistersQ_regs/pixelRadiationRegistersQ_regs.sv" Line 22. Module pixelRadiationRegistersQ_regs(AXI_ADDR_WIDTH=32,BASEADDR=32'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/andrew/Documents/ProyectoFinalAndrewMorrison/pixelRadiation/pixelRadiation.srcs/sources_1/imports/pixelRadiationRegistersQ_regs/pixelRadiationRegistersQ_regs_pkg.sv" Line 20. Module pixelRadiationRegistersQ_regs_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/andrew/Documents/ProyectoFinalAndrewMorrison/pixelRadiation/pixelRadiation.srcs/sources_1/imports/pixelRadiationRegistersQ_regs/pixelRadiationRegistersQ_regs.sv" Line 22. Module pixelRadiationRegistersQ_regs(AXI_ADDR_WIDTH=32,BASEADDR=32'b0) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/andrew/Documents/ProyectoFinalAndrewMorrison/pixelRadiation/pixelRadiation.srcs/sources_1/imports/pixelRadiationRegistersQ_regs/pixelRadiationRegistersQ_regs_pkg.sv" Line 20. Module pixelRadiationRegistersQ_regs_pkg doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package floating_point_v7_1_3.floating_point_v7_1_3_viv_comp
+Compiling package xbip_utils_v3_0_7.xbip_utils_v3_0_7_pkg
+Compiling package axi_utils_v2_0_3.axi_utils_v2_0_3_pkg
+Compiling package floating_point_v7_1_3.floating_point_v7_1_3_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_3.floating_point_v7_1_3_exp_table_...
+Compiling package mult_gen_v12_0_12.mult_gen_v12_0_12_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_3.floating_point_v7_1_3_pkg
+Compiling package floating_point_v7_1_3.flt_utils
+Compiling package floating_point_v7_1_3.vt2mutils
+Compiling package floating_point_v7_1_3.vt2mcomps
+Compiling package unisim.vcomponents
+Compiling package xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv_comp
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.pixelRadiationRegistersQ_regs(AX...
+Compiling module xil_defaultlib.pixelRadiationStateMachine(BITS=...
+Compiling module xil_defaultlib.shiftRegister(LENGTH=64,WORDWIDT...
+Compiling module xpm.xpm_fifo_rst(COMMON_CLOCK=1,CDC_...
+Compiling module xpm.xpm_fifo_reg_bit
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=5...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=4...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=4...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=2...
+Compiling module xpm.xpm_fifo_base(COMMON_CLOCK=1,FIF...
+Compiling module xpm.xpm_fifo_sync(FIFO_MEMORY_TYPE="...
+Compiling module xil_defaultlib.fifoFWFT(FIFO_DEPTH=16,FIFO_WIDT...
+Compiling module xil_defaultlib.circularBuffer(STEPS=16,WORDWIDT...
+Compiling module xil_defaultlib.delayValid
+Compiling module xil_defaultlib.addMultiply(LENGTHINPUT=64,WIDTH...
+Compiling module xil_defaultlib.addMultiply(LENGTHINPUT=64,WIDTH...
+Compiling module xil_defaultlib.delayValid(STAGES=7)
+Compiling module xil_defaultlib.addertree_sec(NINPUTS=64,IWIDTH=...
+Compiling module xil_defaultlib.accumulator(INPUTWIDTH=33,OUTPUT...
+Compiling architecture xilinx of entity axi_utils_v2_0_3.axi_slave_2to1 [\axi_slave_2to1(c_a_tdata_width=...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=63,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=64)\]
+Compiling architecture struct of entity floating_point_v7_1_3.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=16,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=16)\]
+Compiling architecture rtl of entity floating_point_v7_1_3.norm_zero_det [\norm_zero_det(data_width=10,nor...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=8,fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_3.mux4 [\mux4(c_xdevicefamily="artix7",w...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=4,fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_3.mux4 [\mux4(c_xdevicefamily="artix7",w...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=2,length=3)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=2,fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_3.mux4 [\mux4(c_xdevicefamily="artix7",w...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_3.mux4 [\mux4(c_xdevicefamily="artix7",w...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=2,length=2)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=2)\]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=8,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_3.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [delay_default]
+Compiling architecture rtl of entity floating_point_v7_1_3.lead_zero_encode [\lead_zero_encode(c_xdevicefamil...]
+Compiling architecture rtl of entity floating_point_v7_1_3.shift_msb_first [\shift_msb_first(a_width=64,dist...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=11)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=11,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=25,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=26)\]
+Compiling architecture struct of entity floating_point_v7_1_3.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=27)\]
+Compiling architecture struct of entity floating_point_v7_1_3.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=28,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=29,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=54,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=3,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=2,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=2,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_3.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture rtl of entity floating_point_v7_1_3.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_3.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(length=6)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(length=3)\]
+Compiling architecture synth of entity floating_point_v7_1_3.fix_to_flt_conv_exp [\fix_to_flt_conv_exp(c_xdevicefa...]
+Compiling architecture synth of entity floating_point_v7_1_3.flt_dec_op [\flt_dec_op(c_xdevicefamily="art...]
+Compiling architecture struct of entity floating_point_v7_1_3.fix_to_flt_conv [\fix_to_flt_conv(c_xdevicefamily...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=64,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_3.floating_point_v7_1_3_viv [\floating_point_v7_1_3_viv(c_xde...]
+Compiling architecture xilinx of entity floating_point_v7_1_3.floating_point_v7_1_3 [\floating_point_v7_1_3(c_xdevice...]
+Compiling architecture fix2float_arch of entity xil_defaultlib.fix2float [fix2float_default]
+Compiling module xil_defaultlib.nonZeroCounter(INPUTWIDTH=24,LIM...
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=19,length=10)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=2,length=10)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=21)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=7,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=4,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=16,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=17,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,ca...]
+Compiling architecture rtl of entity floating_point_v7_1_3.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=17,b_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(length=2)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=2,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_3.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=17,b_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=17)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=2,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_3.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=17,b_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=17,length=2)\]
+Compiling architecture rtl of entity floating_point_v7_1_3.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=17,b_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=19,length=3)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=17,length=3)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=2,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_3.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=19,length=4)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=17,length=4)\]
+Compiling architecture rtl of entity floating_point_v7_1_3.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(length=4)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=19,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=17,length=5)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,a_...]
+Compiling architecture rtl of entity floating_point_v7_1_3.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=19,length=6)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=17,length=6)\]
+Compiling architecture rtl of entity floating_point_v7_1_3.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=17,length=7)\]
+Compiling architecture rtl of entity floating_point_v7_1_3.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_3.fix_mult_dsp48e1_dbl [\fix_mult_dsp48e1_dbl(mult_usage...]
+Compiling architecture rtl of entity floating_point_v7_1_3.fix_mult [\fix_mult(c_xdevicefamily="artix...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=10)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=11,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_3.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=9,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_3.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity floating_point_v7_1_3.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_3.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(length=11)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=2,length=11,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(length=11,fast_input=true...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(length=13,fast_input=true...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=4,length=11,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=11,length=11)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(length=2,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=3,fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=4,length=2,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=14)\]
+Compiling architecture rtl of entity floating_point_v7_1_3.flt_mult_exp [\flt_mult_exp(c_xdevicefamily="a...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=11,length=2)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=25)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=26,length=2,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_3.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=27,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_3.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture struct of entity floating_point_v7_1_3.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=29)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=54,length=0,fast_in...]
+Compiling architecture rtl of entity floating_point_v7_1_3.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_3.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_3.flt_mult_round [\flt_mult_round(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_3.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.flt_mult [\flt_mult(c_xdevicefamily="artix...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture xilinx of entity floating_point_v7_1_3.floating_point_v7_1_3_viv [\floating_point_v7_1_3_viv(c_xde...]
+Compiling architecture xilinx of entity floating_point_v7_1_3.floating_point_v7_1_3 [\floating_point_v7_1_3(c_xdevice...]
+Compiling architecture floatmultiplicator_arch of entity xil_defaultlib.floatMultiplicator [floatmultiplicator_default]
+Compiling module xil_defaultlib.interruptSource
+Compiling module xil_defaultlib.pixelRadiation(BASEADDR=32'b0,BI...
+Compiling module xil_defaultlib.tb_pixelRadiation
+WARNING: [XSIM 43-3373] "/home/andrew/Documents/ProyectoFinalAndrewMorrison/pixelRadiation/pixelRadiation.srcs/sim_1/new/tb_pixelRadiation.sv" Line 228. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "/home/andrew/Documents/ProyectoFinalAndrewMorrison/pixelRadiation/pixelRadiation.srcs/sim_1/new/tb_pixelRadiation.sv" Line 229. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "/home/andrew/Documents/ProyectoFinalAndrewMorrison/pixelRadiation/pixelRadiation.srcs/sim_1/new/tb_pixelRadiation.sv" Line 230. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "/home/andrew/Documents/ProyectoFinalAndrewMorrison/pixelRadiation/pixelRadiation.srcs/sim_1/new/tb_pixelRadiation.sv" Line 231. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "/home/andrew/Documents/ProyectoFinalAndrewMorrison/pixelRadiation/pixelRadiation.srcs/sim_1/new/tb_pixelRadiation.sv" Line 232. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "/home/andrew/Documents/ProyectoFinalAndrewMorrison/pixelRadiation/pixelRadiation.srcs/sim_1/new/tb_pixelRadiation.sv" Line 233. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "/home/andrew/Documents/ProyectoFinalAndrewMorrison/pixelRadiation/pixelRadiation.srcs/sim_1/new/tb_pixelRadiation.sv" Line 303. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+WARNING: [XSIM 43-3373] "/home/andrew/Documents/ProyectoFinalAndrewMorrison/pixelRadiation/pixelRadiation.srcs/sim_1/new/tb_pixelRadiation.sv" Line 309. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Compiling package xil_defaultlib.pixelRadiationRegistersQ_regs_pk...
+Compiling package xil_defaultlib.$unit_2
+Compiling package xil_defaultlib.$unit_5
+Built simulation snapshot tb_pixelRadiation_behav

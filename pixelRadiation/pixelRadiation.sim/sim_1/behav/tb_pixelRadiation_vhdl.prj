@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../pixelRadiation.srcs/sources_1/ip/fix2float/sim/fix2float.vhd"
+vhdl xil_defaultlib  "../../../pixelRadiation.srcs/sources_1/ip/fix2float/demo_tb/tb_fix2float.vhd"
+vhdl xil_defaultlib  "../../../pixelRadiation.srcs/sources_1/ip/floatMultiplicator/sim/floatMultiplicator.vhd"
+vhdl xil_defaultlib  "../../../pixelRadiation.srcs/sources_1/ip/floatMultiplicator/demo_tb/tb_floatMultiplicator.vhd"
+
+# Do not sort compile order
+nosort

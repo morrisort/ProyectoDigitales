@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/andrew/Documents/ProyectoFinalAndrewMorrison/pixelRadiation/pixelRadiation.srcs/sources_1/ip/fix2float/sim/fix2float.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fix2float
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/andrew/Documents/ProyectoFinalAndrewMorrison/pixelRadiation/pixelRadiation.srcs/sources_1/ip/fix2float/demo_tb/tb_fix2float.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_fix2float
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/andrew/Documents/ProyectoFinalAndrewMorrison/pixelRadiation/pixelRadiation.srcs/sources_1/ip/floatMultiplicator/sim/floatMultiplicator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity floatMultiplicator
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/andrew/Documents/ProyectoFinalAndrewMorrison/pixelRadiation/pixelRadiation.srcs/sources_1/ip/floatMultiplicator/demo_tb/tb_floatMultiplicator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_floatMultiplicator
