@@ -39,6 +39,7 @@ sdk/*_bsp*/*
 repo/**
 # whitelist vivado-library if it exists
 !repo/vivado-library
+!repo/vivado-library/**
 #do not white-list submodule contents
 !repo/local
 !repo/local/**
