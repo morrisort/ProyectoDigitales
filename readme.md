@@ -1,6 +1,6 @@
-#Titulo
+# Titulo
 
-##Parametros
+## Parametros
 
 **BASEADDR**:	Dirección de la interfaz axiLite. No se como automatizar la elección de esta dirección.
 
@@ -14,7 +14,8 @@
 
 **QWIDTH**:	Ancho en bits de cada elemento de las matrices Q1 y Q2.
 
-##Uso del ip
+## Uso del ip
+
 **Comandos**: Los comandos se escriben en el registro 'command'. Están definidos en 'commands.vh'.
 
 Para empezar a cargar hay que escribir el comando START_LOADING.
